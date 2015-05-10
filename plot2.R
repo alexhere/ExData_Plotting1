@@ -1,0 +1,6 @@
+source("loaddata.R")
+d <- loaddata()
+png("plot2.png",width=480,height=480)
+par(cex = 0.75)
+plot(d$DateTime,d$Global_active_power,type = "l",xlab = "",ylab = "Global Active Power (kilowatts)")
+dev.off()
